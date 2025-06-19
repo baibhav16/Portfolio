@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fe8d6b, #dddde5, #e57893ca , #9191e2);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'K2D', sans-serif;
+  overflow-x: hidden;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url('/bg-elements/stars.svg'), url('/bg-elements/butterfly.svg'), url('/bg-elements/moon.svg');
+  background-position: top left, bottom left, center right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  opacity: 0.4;
+}
+
+
+
+.grad1 {
+    position:absolute;
+    
+    height:540px;
+    width: 900px;
+    border-radius:50%;
+    
+    
+    background-image: radial-gradient(rgb(148, 99, 172), rgb(146, 210, 217),white
+    );
+    filter: blur(30px);
+  }
+  .grad2 {
+    position:absolute;
+    
+    height:580px;
+    width: 1000px;
+    border-radius:50%;
+    
+    
+    background-image: radial-gradient(rgb(146, 203, 203), rgb(196, 170, 189),rgb(242, 242, 242)
+    );
+    filter: blur(30px);
+  }
+.alag{
+    font-family: "K2D", sans-serif;
+    font-weight: 100;
+  font-style: normal;
+}
+.str{
+  
+    -webkit-text-stroke: 1px black;
+  }
+ 
+  #contacts{
+    background-color: #6d1a002f;
+    
+  }
+
+  .projects{
+    width: 8;
+  }
+  @keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}

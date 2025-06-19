@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+
+.s1{
+    position:absolute;
+      
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    
+    
+    background: #f3f2f2;
+    filter: blur(4px);
+  
+   }
+   .s2{
+    position:absolute;
+      
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    
+    
+    background: #f3f2f2;
+    filter: blur(1px);
+  
+   }
+   .s4{
+    position:absolute;
+      
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    
+    
+    background: #f3f2f2;
+    filter: blur(1px);
+  
+   }
+   .s5{
+    position:absolute;
+      
+    height: 10px;
+    width: 10px;
+    border-radius:50%;
+    
+    
+    background: #f3f2f2;
+    filter: blur(2px);
+  
+   }
+
+   @keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+}
