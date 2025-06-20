@@ -48,7 +48,8 @@ export default function PortfolioPage() {
         title: "AI-Based Fruits Expiry Predictor",
         description:
           "A deep learning model using MobileNetV2 to detect spoilage and estimate the remaining shelf life of fruits based on images, helping reduce food waste in smart fridges and grocery inventory systems.",
-      },
+      }
+    ,
       {
         title: "AI-Based Disease Predictor",
         description:
@@ -57,8 +58,14 @@ export default function PortfolioPage() {
       {
         title: "Markdown Previewer",
         description:
-          "A real-time markdown editor built with React that lets users write and instantly preview styled text. Supports GitHub-style markdown syntax with clean UI and dark mode.",
+          "A real-time markdown editor built with React that lets users write and instantly preview styled text. .",
       },
+      {
+  title: "AI-Based Drug Interaction Checker",
+  description:
+    "A smart drug interaction checker powered by the Mistral API that analyzes multiple medications for potential interactions, dosage safety, and personalized risk based on age and gender input.",
+},
+
     ].map(({ title, description }, i) => (
       <div
         key={i}
@@ -101,6 +108,8 @@ export default function PortfolioPage() {
             <a href="https://www.linkedin.com/in/baibhav-op/">
             Linkedin
             </a>
+            <span className="text-black">            |         </span>
+            <a href="https://github.com/baibhav16">Github</a>
           </p>
   <p className="text-lg sm:text-xl text-black mb-8">
 
